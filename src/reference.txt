@@ -1,0 +1,109 @@
+ham-tool/
+└── src/
+    ├── app/
+    │   ├── router/
+    │   │   ├── AppRouter.jsx
+    │   │   ├── ProtectedRoute.jsx
+    │   │   └── routes.js
+    │   ├── providers/
+    │   │   ├── AuthProvider.jsx
+    │   │   ├── MUIThemeProvider.jsx
+    │   │   ├── TailwindProvider.jsx  (if needed for context)
+    │   │   └── StoreProvider.jsx
+    │   └── store/
+    │       ├── authStore.js
+    │       ├── uiStore.js
+    │       ├── assetStore.js
+    │       └── componentStore.js
+    │
+    ├── layout/
+    │   ├── DashboardLayout.jsx
+    │   ├── Sidebar/
+    │   │   ├── Sidebar.jsx
+    │   │   └── SidebarItem.jsx
+    │   ├── Topbar/
+    │   │   ├── Topbar.jsx
+    │   │   └── UserMenu.jsx
+    │   └── Navigation/
+    │       └── NavItems.js
+    │
+    ├── pages/
+    │   ├── dashboard/
+    │   │   └── DashboardPage.jsx
+    │   ├── assets/
+    │   │   ├── AssetsListPage.jsx
+    │   │   ├── AssetDetailsPage.jsx
+    │   │   └── components/
+    │   │       ├── AssetCard.jsx
+    │   │       └── AssetTable.jsx
+    │   ├── components/
+    │   │   ├── ComponentListPage.jsx
+    │   │   ├── ComponentDetailsPage.jsx
+    │   │   └── components/
+    │   │       ├── ComponentCard.jsx
+    │   │       └── ComponentTable.jsx
+    │   ├── requests/
+    │   │   └── RequestsPage.jsx
+    │   └── auth/
+    │       └── LoginPage.jsx
+    │
+    ├── components/
+    │   ├── ui/
+    │   │   ├── MUIButton.jsx
+    │   │   ├── MUICard.jsx
+    │   │   ├── MUITextField.jsx
+    │   │   ├── MUISelect.jsx
+    │   │   ├── MUIModal.jsx
+    │   │   ├── Table.jsx          (MUI DataGrid wrapper)
+    │   │   └── Badge.jsx
+    │   ├── tailwind/
+    │   │   ├── TWButton.jsx
+    │   │   ├── TWCard.jsx
+    │   │   └── TWBadge.jsx
+    │   ├── filters/
+    │   │   ├── FilterSidebar.jsx
+    │   │   ├── CategoryFilter.jsx
+    │   │   ├── SubcategoryFilter.jsx
+    │   │   ├── ManufacturerFilter.jsx
+    │   │   ├── StockStatusFilter.jsx
+    │   │   └── ClearFilters.jsx
+    │   └── common/
+    │       ├── SearchBar.jsx
+    │       ├── Pagination.jsx
+    │       ├── StatusTag.jsx
+    │       └── InfoPanel.jsx
+    │
+    ├── hooks/
+    │   ├── useAssets.js
+    │   ├── useComponents.js
+    │   ├── useFilters.js
+    │   └── usePagination.js
+    │
+    ├── services/
+    │   ├── api/
+    │   │   ├── http.js
+    │   │   ├── assetsAPI.js
+    │   │   ├── componentsAPI.js
+    │   │   └── authAPI.js
+    │   └── adapters/
+    │       ├── assetAdapter.js
+    │       └── componentAdapter.js
+    │
+    ├── utils/
+    │   ├── formatters.js
+    │   ├── validators.js
+    │   ├── constants.js
+    │   └── helpers.js
+    │
+    ├── theme/
+    │   ├── tailwind.css
+    │   ├── mui-theme.js
+    │   └── index.css   (imports Tailwind + custom)
+    │
+    ├── assets/
+    │   ├── icons/
+    │   ├── images/
+    │   └── illustrations/
+    │
+    ├── main.jsx
+    └── App.jsx
