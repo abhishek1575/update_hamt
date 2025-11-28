@@ -1,13 +1,17 @@
-import http from "./http";
+import http from "../http";
+
+import Config from "../Config";
+
+const BASE_URL = Config.API_BASE_URL + "api/users/";
 
 export const getAdminDashboardStats = async () => {
-  return http.get("/api/users/dashboard/admin");
+  return http.get(`${BASE_URL}dashboard/admin`);
 };
 
 // GET: /api/requests/all
 export const getAllRequests = async () => {
   try {
-    const res = await http.get("/api/requests/all");
+    const res = await http.get(`${BASE_URL}requests/all`);
     return res.data;
   } catch (err) {
     console.error("Error loading requests:", err);
